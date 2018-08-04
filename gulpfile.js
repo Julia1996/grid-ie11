@@ -14,12 +14,13 @@ gulp.task('styles', function() {
     .pipe(less())
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
-      cascade: false
+      cascade: false,
+      grid: true // !!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!!!!
     }))
     .pipe(gulp.dest('public/css'));
 });
 
-gulp.task('build', ['clean', 'styles']);
+gulp.task('build', ['styles']);
 
 gulp.task('watch', function() {
   gulp.watch(['less/*.less', 'css/*.css'], ['build']);

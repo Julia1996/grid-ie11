@@ -1,40 +1,42 @@
 body {
-  -ms-grid-columns: 66% 34%;
-  grid-template-columns: 66% 34%;
-  -ms-grid-rows: auto;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
-  display: -ms-grid;
   display: grid;
+  align-items: start;
 }
 
 header {
   background: #B209B2;
-  -ms-grid-row-span: 2;
-  grid-column: span 2;
-  -ms-grid-row: 1;
+  padding: 30px;
+  margin-bottom: 20px;
+
+  grid-column: 1 / span 2;
   grid-row: 1;
 }
 
 section {
   background: #0EFFDA;
-  -ms-grid-column: 2;
+  padding: 30px;
+  margin-left: 20px;
+
   grid-column: 2;
-  -ms-grid-row: 2;
   grid-row: 2;
 }
 
 aside {
   background: #FFC800;
-  -ms-grid-column: 1;
+  padding: 30px;
+
   grid-column: 1;
-  -ms-grid-row: 2;
   grid-row: 2;
+  -ms-grid-row-align: start;
 }
 
 footer {
-  background: #220b53;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 3;
+  background: #796ae5;
+  padding: 30px;
+  margin-top: 20px;
+
+  grid-column: 1 / span 2;
   grid-row: 3;
 }
