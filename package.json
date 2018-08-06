@@ -1,0 +1,28 @@
+{
+  "name": "grid-ie11",
+  "version": "1.0.0",
+  "description": "\"# Page on grid with support in ie11\"",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julia1996/grid-ie11.git"
+  },
+  "keywords": [
+    "grid"
+  ],
+  "author": "Julia1996",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Julia1996/grid-ie11/issues"
+  },
+  "homepage": "https://github.com/Julia1996/grid-ie11#readme"
+}

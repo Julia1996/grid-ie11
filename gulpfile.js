@@ -1,17 +1,10 @@
 'use strict';
 
 const gulp = require('gulp');
-const del = require('del');
 const autoprefixer = require('gulp-autoprefixer');
-const less = require('gulp-less');
-
-gulp.task('clean', function(){
-  return del('public/css');
-});
 
 gulp.task('styles', function() {
-  return gulp.src('less/all.less')
-    .pipe(less())
+  return gulp.src('css/styles.css')
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false,
